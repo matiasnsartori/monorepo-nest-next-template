@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
   const handleClick = async () => {
-    const response = await fetch("/");
-    const data = await response.json();
+    const response = await fetch("/api");
+    const data = await response.text();
     console.log(data);
   };
 
